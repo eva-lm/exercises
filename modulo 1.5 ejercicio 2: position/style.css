@@ -1,0 +1,46 @@
+/* common styles */
+
+.container {
+  height: 200px;
+  width: 200px;
+  background-color: cyan;
+}
+.box {
+  background-color: red;
+}
+
+.cat {
+  background-color: yellow;
+}
+
+/* position */
+
+.box.pos {
+  position: absolute;
+  left: 10px;
+  top:  10px;
+}
+
+.relative {
+  height: 20px;
+  width: 20px;
+  position: fixed;
+  left: 200px;
+  background-color: green;
+}
+
+/* z-index */
+
+.box.z {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 2;
+}
+
+.cat.z {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3;
+}

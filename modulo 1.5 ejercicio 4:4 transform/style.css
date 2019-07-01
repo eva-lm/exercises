@@ -1,0 +1,25 @@
+body {
+  padding: 100px;
+}
+
+.a, .b, .c {
+  width: 100px;
+  height: 100px;
+}
+
+.a {
+  background-color: red;
+}
+
+.b {
+  background-color: green;
+}
+
+.c {
+  background-color: blue;
+}
+
+.b {
+  /* transform: rotate(45deg); */
+  /* transform: scale(2); */
+}
