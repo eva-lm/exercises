@@ -1,0 +1,14 @@
+@mixin button {
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.button {
+  @include button();
+}
+
+.link {
+  @include button();
+}

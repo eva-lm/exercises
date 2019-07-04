@@ -1,0 +1,49 @@
+.button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.link {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+.avatar {
+  background-image: "img(./assets/imgs/user.jpg)";
+}
+
+.hero {
+  background-image: "img(./assets/imgs/hero.jpg)";
+}
+
+.button.active {
+  color: red;
+}
+
+.button.disabled {
+  color: grey;
+}
+
+.link__adalab:hover {
+  background-color: #099d8d;
+  color: #fff;
+}
+
+.link__github:hover {
+  background-color: #CCC;
+  color: #000;
+}
+
+body {
+  background: url("../images/logo-adalab-80px.png") center center no-repeat #f3f4f5;
+  margin: 0;
+  height: 100vh;
+}
+
+/*# sourceMappingURL=main.css.map */

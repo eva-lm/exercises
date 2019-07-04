@@ -1,0 +1,12 @@
+@function imgRoute($path) {
+  @return 'img(./assets/imgs/' + $path + ')';
+}
+// esta función iría en su archivo dentro de la carpeta core/ que luego podríamos usar así:
+
+.avatar {
+  background-image: imgRoute('user.jpg');
+}
+
+.hero {
+  background-image: imgRoute('hero.jpg');
+}
