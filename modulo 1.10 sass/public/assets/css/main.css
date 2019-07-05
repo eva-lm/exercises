@@ -2,7 +2,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
@@ -10,7 +10,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 
@@ -24,10 +24,28 @@
 
 .button.active {
   color: red;
+  font-size: 8px;
 }
 
 .button.disabled {
   color: grey;
+}
+
+.button {
+  padding: 10px;
+  color: green;
+}
+
+.button .disabled {
+  color: grey;
+}
+
+.button .disabled .foo {
+  height: 12px;
+}
+
+.button .active {
+  color: red;
 }
 
 .link__adalab:hover {

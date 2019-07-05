@@ -1,9 +1,28 @@
 .button.active {
   color: red;
+  font-size: 8px;
 }
 
 .button.disabled {
   color: grey;
+}
+
+.button {
+  padding: 10px;
+  color: green;
+
+  .disabled {
+    color: grey;
+
+    .foo {
+      height: 12px;
+    }
+
+  }
+
+  .active {
+    color: red;
+  }
 }
 
 // .button {
