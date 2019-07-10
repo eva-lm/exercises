@@ -1,0 +1,40 @@
+.nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+
+  .logo {
+    display: inline-block;
+    width: 100px;
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  .menu {
+    &__item {
+      display: inline-block;
+    }
+
+    &__link {
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+      }
+    }
+  }
+
+}
