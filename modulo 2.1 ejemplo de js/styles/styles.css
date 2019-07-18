@@ -1,0 +1,9 @@
+.numberA,
+.numberB,
+.result {
+  display: block;
+}
+
+.result {
+  background: #eee;
+}
