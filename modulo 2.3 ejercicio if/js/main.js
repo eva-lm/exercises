@@ -1,6 +1,6 @@
 "use strict";
 
-const showMessage = function() {
+const showMessage = function () {
   let ageValue = age.value;
   ageValue = parseInt(ageValue);
 
