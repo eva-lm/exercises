@@ -1,7 +1,6 @@
 "use strict";
 
 const sum = function() {
-  debugger;
   // get numberA value
   let numberAValue = numberA.value;
   // parse string value to number value
