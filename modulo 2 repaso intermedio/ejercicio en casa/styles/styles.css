@@ -39,6 +39,16 @@ body {
   color: white;
 }
 
+/* colors */
+
+.color-chilean-fire {
+  background-color: #ff9900;
+}
+
+.color-correct-yellow {
+  background-color: #ffcc00;
+}
+
 /* footer */
 
 .footer {

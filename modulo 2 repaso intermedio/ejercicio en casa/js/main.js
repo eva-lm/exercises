@@ -1,12 +1,16 @@
-"use strict";
+'use strict';
+
+// listener
+
+const updateData = ev => {
+  updateFace();
+  updateBackground();
+};
 
 // face
 
 const updateFace = () => {
-  const select = document.querySelector(".js-select");
-  const face = document.querySelector(".js-face");
-  const selectValue = select.value;
-  face.innerHTML = selectValue;
+  document.querySelector('.js-face').innerHTML = document.querySelector('.js-select').value;
 };
 
 // background
@@ -14,11 +18,12 @@ const updateFace = () => {
 const updateBackground = () => {
   const randomNumber = getRandomNumber(100);
   const isOddNumber = isOdd(randomNumber);
-  const colorCorrectYellow = "#ffcc00";
-  const colorChileanFire = "#ff9900";
-  const backgroundColor = isOddNumber ? colorChileanFire : colorCorrectYellow;
-  const container = document.querySelector(".js-container");
-  container.style.backgroundColor = backgroundColor;
+  const container = document.querySelector('.js-container');
+  const className = isOddNumber ? 'color-chilean-fire' : 'color-correct-yellow';
+  // remove all classes
+  container.classList.remove('color-chilean-fire', 'color-correct-yellow');
+  // add correct class
+  container.classList.add(className);
 };
 
 const getRandomNumber = (max = 1) => {
@@ -29,12 +34,5 @@ const isOdd = number => {
   return number % 2 === 1;
 };
 
-// listener
-
-const updateData = ev => {
-  updateFace();
-  updateBackground();
-};
-
-const button = document.querySelector(".js-button");
-button.addEventListener("click", updateData);
+const button = document.querySelector('.js-button');
+button.addEventListener('click', updateData);
