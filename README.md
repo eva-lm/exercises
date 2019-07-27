@@ -1,10 +1,10 @@
-# Ejercicios de la promoción G
+# Exercises: promotion G
 
-Estos son los ejercicios de las [lecciones de la promo G](https://books.adalab.es/materiales-front-end-g/). No están completos, se han programado las partes más importantes de cada ejercicio.
+These are the exercises of the [lessons of promo G](https://books.adalab.es/materiales-front-end-g/). They are not complete, the most important parts of each exercise have been programmed.
 
-Si tienes un ejercicio que no está aquí o que tú lo tienes mejor envíamelo por Slack a Miguel del Mazo.
+If you have an exercise that is not here or that you have better, send it by Slack to the teachers in exchange for 100 stickers.
 
-## Otros ejercicios
+## Other exercises
 
-* Arrays: https://github.com/Adalab/JS-and-breakfast
-* Arrays y eventos: https://github.com/Adalab/100button
+- Arrays: https://github.com/Adalab/JS-and-breakfast
+- Arrays and events: https://github.com/Adalab/100buttons
