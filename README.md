@@ -8,3 +8,4 @@ If you have an exercise that is not here or that you have better, send it by Sla
 
 - Arrays: https://github.com/Adalab/JS-and-breakfast
 - Arrays and events: https://github.com/Adalab/100buttons
+- Arrays and loops: https://github.com/Adalab/Arrays-y-funciones
