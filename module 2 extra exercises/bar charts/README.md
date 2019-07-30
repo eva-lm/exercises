@@ -27,7 +27,8 @@ Al arrancar la página:
 Cuando la usuaria cambie el número de uno de los campos debemos:
 
 - Comprobar si el valor introducido es un número entre 0 y 100.
-- Si no es un número entre 0 y 100 debemos cambiar el valor del campo introducido por la usuaria y poner el número 0.
+- Si no es un número menor de 0 debemos poner el número 0.
+- Si es un número mayor de 100 debemos poner el número 100.
 
 ### Fase 3:
 
@@ -47,8 +48,8 @@ Ya hemos hecho que cuando un campo de texto tiene el valor 0 la barra correspond
 
 ### Fase 6:
 
-Cuando una barra mida menos del 50% el color de fondo de la misma debe ser rojo.
-Cuando una barra mida más del 50%, el color de fondo de la misma deber ser azul.
+Cuando una barra mida menos del 50% el color de fondo de la misma debe ser blanco.
+Cuando una barra mida más del 50%, el color de fondo de la misma deber ser verde.
 
 ### Fase 7:
 
@@ -70,3 +71,37 @@ El resto de estilos los debemos cambiar añadiendo y quitando clases CSS a las b
 > Nota: tienes libertad creativa para elegir colores y formas de bordes, fuentes, tamaños...
 
 Al turrón!!!
+
+# Solución
+
+Para solucionar este ejercicio hemos dividido el flujo de acciones en 2 fases:
+
+### Fase 1: Obtenemos los datos
+
+Cuando la usuaria modifica un input leemos y guardamos los valores de los inputs en la constante `data.value`. Si la usuaria pulsa en **Reset**, **Random** o **Increment** también modificamos y guardamos los nuevos valores en `data.value`.
+
+A partir de ahí comprobamos que todos los datos son correctos. Si no lo son los cambiamos para que sí lo sean y los volvemos a guardar en `data.value`.
+
+En esta primera fase nos hemos centrado solo en asegurar nuestros datos almacenados en `data.value`. Esta es nuestra única fuente de verdad.
+
+### Fase 2: Actualizamos todos los elementos del DOM
+
+Actualizamos todos los elementos del DOM como:
+
+1. Valores de los inputs: puede que estos valores estén desactualizados y por ello debemos actualizarlos con los nuevos valores de `data.value`.
+1. Actualizar los anchos.
+1. Actualizar las clases.
+
+En esta segunda fase nos hemos centrado en actualizar el DOM partiendo de nuestra única fuente de verdad: `data.value`.
+
+### Explicación:
+
+Separando el código en estas dos partes conseguimos:
+
+- Tener una única fuente de datos.
+- Centralizar el flujo de los datos. Independientemente de si una acción empieza desde un click en un botón o cambiando un input siempre trabajamos de la misma manera.
+- Simplificar el flujo: al conseguir un flujo lineal, sin bifurcaciones, nuestra aplicación o funciona siempre o falla siempre. Si falla siempre en seguida nos damos cuenta y lo podemos corregir.
+
+### Diagrama de flujo de la aplicación
+
+![Flow](./flow.svg)
